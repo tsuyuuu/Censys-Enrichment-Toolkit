@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /admin
+Disallow: /api
+Disallow: /static/admin.html
+Allow: /
+
+User-agent: Googlebot
+Crawl-delay: 10
+Allow: /
+
+User-agent: Bingbot
+Crawl-delay: 10
+Allow: /
+
+Sitemap: https://centralstructure.online/sitemap.xml
