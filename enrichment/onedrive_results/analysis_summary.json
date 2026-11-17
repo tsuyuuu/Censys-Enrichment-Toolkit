@@ -1,0 +1,64 @@
+{
+  "analysis_type": "offline Censys host dataset analysis",
+  "n_original_distinct_ips": 1,
+  "n_censys_host_records_loaded": 1,
+  "n_censys_host_records_missing": 0,
+  "n_unique_24_prefixes": 1,
+  "n_prefixes_with_multiple_recovered_ips": 0,
+  "indicator_combinations": {
+    "C": 1
+  },
+  "indicator_combinations_by_label": {
+    "C": {
+      "published": 0,
+      "unlisted": 1
+    }
+  },
+  "published_panel_labels": {
+    "Unlisted": 1
+  },
+  "top_24_prefixes": [
+    [
+      "140.150.232.0/24",
+      1
+    ]
+  ],
+  "host_enrichment_coverage": {
+    "asn": 1,
+    "country": 1,
+    "ports": 1,
+    "http_title_with_value": 1
+  },
+  "asn_distribution_observed_only": {
+    "AS200307 | ZYNOO-MNT - ZYNOO Web Services FZC LLC": 1
+  },
+  "country_distribution_observed_only": {
+    "United States": 1
+  },
+  "open_port_prevalence_among_returned_hosts": {
+    "22": 1,
+    "80": 1,
+    "443": 1,
+    "5000": 1
+  },
+  "title_distribution_observed_only": {
+    "301 Moved Permanently": 1,
+    "Just a moment... | OneDrive": 1
+  },
+  "template_population": {
+    "total_unlisted": 1,
+    "unlisted_with_evaluable_verified_body": 1,
+    "unlisted_with_at_least_one_reference_template_match": 1,
+    "all_evaluable_hosts": 1,
+    "all_hosts_with_at_least_one_template_match": 1,
+    "raw_comparable_resources": 2,
+    "missing_or_unverifiable_resources": 0,
+    "note": "No denominator of 139 may be called a verified-nonmatch; missing body != nonmatch; historical reconstructed candidate not counted independently."
+  },
+  "limitations": [
+    "Source data describes Censys scan observations, not actor control or phishing activity.",
+    "Service and country data may reflect current observations rather than collection-period conditions; inspect requested_at_time.",
+    "HTTP body hashes and endpoints are observation-specific; requires original complete Censys-returned bytes.",
+    "Same /24 is not evidence of shared malicious operator."
+  ]
+}

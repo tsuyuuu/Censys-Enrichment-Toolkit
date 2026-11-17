@@ -1,0 +1,173 @@
+{
+  "analysis_type": "offline Censys host dataset analysis",
+  "n_original_distinct_ips": 170,
+  "n_censys_host_records_loaded": 10,
+  "n_censys_host_records_missing": 160,
+  "n_unique_24_prefixes": 128,
+  "n_prefixes_with_multiple_recovered_ips": 20,
+  "indicator_combinations": {
+    "C": 42,
+    "AB": 45,
+    "ABC": 26,
+    "B": 13,
+    "AC": 17,
+    "A": 12,
+    "BC": 15
+  },
+  "indicator_combinations_by_label": {
+    "A": {
+      "published": 5,
+      "unlisted": 7
+    },
+    "AB": {
+      "published": 16,
+      "unlisted": 29
+    },
+    "ABC": {
+      "published": 6,
+      "unlisted": 20
+    },
+    "AC": {
+      "published": 0,
+      "unlisted": 17
+    },
+    "B": {
+      "published": 2,
+      "unlisted": 11
+    },
+    "BC": {
+      "published": 2,
+      "unlisted": 13
+    },
+    "C": {
+      "published": 0,
+      "unlisted": 42
+    }
+  },
+  "published_panel_labels": {
+    "Unlisted": 139,
+    "BlackApex": 15,
+    "W1-TOKEN": 1,
+    "XXX101-TOKEN": 3,
+    "DarkApex": 5,
+    "OGPARKER1": 2,
+    "403 Forbidden": 1,
+    "@globaltoken1": 4
+  },
+  "top_24_prefixes": [
+    [
+      "108.186.202.0/24",
+      8
+    ],
+    [
+      "95.133.228.0/24",
+      7
+    ],
+    [
+      "95.133.229.0/24",
+      5
+    ],
+    [
+      "95.133.230.0/24",
+      5
+    ],
+    [
+      "45.61.178.0/24",
+      4
+    ],
+    [
+      "64.224.17.0/24",
+      3
+    ],
+    [
+      "108.165.15.0/24",
+      3
+    ],
+    [
+      "140.150.232.0/24",
+      3
+    ],
+    [
+      "37.10.71.0/24",
+      2
+    ],
+    [
+      "45.61.183.0/24",
+      2
+    ],
+    [
+      "91.192.10.0/24",
+      2
+    ],
+    [
+      "95.133.231.0/24",
+      2
+    ],
+    [
+      "107.173.53.0/24",
+      2
+    ],
+    [
+      "124.198.132.0/24",
+      2
+    ],
+    [
+      "167.88.174.0/24",
+      2
+    ]
+  ],
+  "host_enrichment_coverage": {
+    "asn": 10,
+    "country": 10,
+    "ports": 10,
+    "http_title_with_value": 9
+  },
+  "asn_distribution_observed_only": {
+    "AS16509 | AMAZON-02 - Amazon.com, Inc.": 6,
+    "AS206996 | zap-hosting - ZAP-Hosting GmbH": 1,
+    "AS39798 | MivoCloud - MivoCloud SRL": 1,
+    "AS12586 | ASGHOSTNET - GHOSTnet GmbH": 1,
+    "AS16276 | OVH - OVH SAS": 1
+  },
+  "country_distribution_observed_only": {
+    "Germany": 6,
+    "United States": 3,
+    "Moldova": 1
+  },
+  "open_port_prevalence_among_returned_hosts": {
+    "443": 9,
+    "80": 6,
+    "22": 4,
+    "5000": 3,
+    "53": 1
+  },
+  "title_distribution_observed_only": {
+    "400 The plain HTTP request was sent to HTTPS port": 3,
+    "MoneyFlex": 3,
+    "301 Moved Permanently": 3,
+    "403 Forbidden": 2,
+    "400 Bad Request": 1,
+    "PHP 8.2.31 - phpinfo()": 1,
+    "Publicis Groupe | Vizta": 1,
+    "Just a moment... | Connecting": 1,
+    "Human Check | vesta-io": 1,
+    "Welcome to nginx!": 1,
+    "Outdated Browser - Maxautomation": 1
+  },
+  "template_population": {
+    "total_unlisted": 139,
+    "unlisted_with_evaluable_verified_body": 1,
+    "unlisted_with_at_least_one_reference_template_match": 1,
+    "all_evaluable_hosts": 3,
+    "all_hosts_with_at_least_one_template_match": 3,
+    "raw_comparable_resources": 9,
+    "missing_or_unverifiable_resources": 0,
+    "note": "No denominator of 139 may be called a verified-nonmatch; missing body != nonmatch; historical reconstructed candidate not counted independently."
+  },
+  "limitations": [
+    "Source data describes Censys scan observations, not actor control or phishing activity.",
+    "Service and country data may reflect current observations rather than collection-period conditions; inspect requested_at_time.",
+    "HTTP body hashes and endpoints are observation-specific; requires original complete Censys-returned bytes.",
+    "Same /24 is not evidence of shared malicious operator."
+  ]
+}
